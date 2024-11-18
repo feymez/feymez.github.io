@@ -6,6 +6,19 @@
     color: #FFFFFF;
 }
 
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 :root {
     --primary: #0088FF;
     --secondary: #0E355D;
