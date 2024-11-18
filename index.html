@@ -14,23 +14,27 @@
 <body>
     <div id="page_container">
         <div id="page_navigation">
-            <nav class="navbar">
-                <div class="logo"><img src="img/logo.png" width="50rem"></div>
-                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-                <ul class="menu">
-                  <li><a href="regulamin.html">Regulamin</a></li>
-                  <li><a href="wsparcie.html">Wsparcie</a></li>
-                  <li><a href="podania.html">Podania</a></li>
-                  <li><a href="onas.html">O nas</a></li>
-                </ul>
-              </nav>
-              
+            <div id="nav_logo">
+
+            </div>
+            <a href="index.html" id="logo_button"><img src="img/logo.png" width="50rem"></a>
+            <div class="nav_buttons_container">
+                <button class="nav_button" onclick="location.href='regulamin.html'">Regulamin</button>
+                <button class="nav_button" onclick="location.href='wsparcie.html'">Wsparcie</button>
+                <button class="nav_button">Podania</button>
+                <button class="nav_button">O nas</button>
+                <button class="nav_button">Kontakt</button>
+            </div>
+            <div id="nav_socials">
+                <a href="https://discord.gg/8RZCVQKHv4" id="discord_button"><img src="img/discord.png" width="32px"></a>
+                <a href="https://tiktok.com/@blastrp8?_t=8rUrMfk4rVW&_r=1" id="discord_button"><img src="img/tiktok.png" width="32px"></a>
+            </div>
         </div>
         <div id="page_content">
             <div id="first_stripe">
                 <div id="first_stripe_left">
-                    <h1 style="font-size: 40px;">Świat pełen zabawy!</h1> 
-                    <span style="font-size: 25px;">Witaj w niezwykłym świecie Roleplay, gdzie każda chwila może stać się początkiem niezapomnianej przygody. Oferujemy wyjątkowe doświadczenia, dynamiczne otoczenie oraz możliwość kreowania własnej historii w pełnym detali świecie. Tutaj kreatywność i dobra zabawa idą w parze, a możliwości są niemal nieograniczone.</span>
+                    <h1 style="font-size: 2rem;">Świat pełen zabawy!</h1> 
+                    <span style="font-size: 1.5rem;">Witaj w niezwykłym świecie Roleplay, gdzie każda chwila może stać się początkiem niezapomnianej przygody. Oferujemy wyjątkowe doświadczenia, dynamiczne otoczenie oraz możliwość kreowania własnej historii w pełnym detali świecie. Tutaj kreatywność i dobra zabawa idą w parze, a możliwości są niemal nieograniczone.</span>
                     <div id="first_left_buttons">
                         <a href="https://discord.gg/8RZCVQKHv4"><button class="first_left_btn">Dołącz do nas!</button></a>
                         <a href="onas.html"><button class="first_left_btn">Dowiedz się więcej</button></a>
@@ -40,6 +44,22 @@
                 </div>
                 <div id="first_stripe_right">
                 </div>
+            </div>
+            <div id="second_stripe">
+                <div id="second_stripe_left">
+                    <h1 style="font-size: 2rem;">Najwyższa jakość rozgrywki</h1>
+                    <span style="font-size: 1.5rem;">
+                        Na serwerze <b style="color: #0088FF">BlastRP</b> oferujemy najwyższy poziom rozgrywki Roleplay dla każdego. 
+                        Wnikliwa weryfikacja głosowa każdego gracza pozwala utrzymać wysoki standard gry w określonych ramach.
+                    </span>
+                    <br><br>
+                    <span style="font-size: 1.5rem;">
+                        Aby zagrać na naszym serwerze wejdź na nasz serwer <a href="https://discord.gg/8RZCVQKHv4" style="color: #0088FF; font-weight: bold;">Discord</a>
+                        i przejdź weryfikację głosową. 
+                    </span>
+                    <button id="rules_button" onclick="location.href='regulamin.html'">Regulamin Serwera</button>
+                </div>
+                <div id="second_stripe_right"></div>
             </div>
         </div>
     </div>

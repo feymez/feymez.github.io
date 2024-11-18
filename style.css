@@ -1,26 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-body {
-    font-size: 1.2vw; /* Dynamiczna czcionka */
-  }
-  
-  /* Dla ekranów mniejszych niż 768px */
-  @media (max-width: 768px) {
-    body {
-      font-size: 4vw; /* Większa czcionka dla małych ekranów */
-    }
-  }
-  
-  /* Dla ekranów mniejszych niż 480px */
-  @media (max-width: 480px) {
-    body {
-      font-size: 5vh; /* Dopasowanie do wysokości ekranu */
-    }
-  }
-
-
-
 * {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
@@ -32,11 +12,9 @@ body {
 }
 
 body {
-    position: relative;
     background-color: #0d0d0d;
     margin: 0;
     height: 100vh;
-    overflow: auto;
 }
 
 body::before {
@@ -52,69 +30,6 @@ body::before {
     opacity: 0.2;
     z-index: -1;
 }
-
-@media (max-width: 768px) {
-    #page_navigation {
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .nav_buttons_container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav_button {
-        font-size: 16px;
-        margin: 5px 0;
-    }
-
-    #first_stripe {
-        flex-direction: column;
-        height: auto;
-        margin-top: 5vh;
-    }
-
-    #first_stripe_left, #first_stripe_right {
-        width: 90%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    #first_divider {
-        display: none; /* Ukrycie separatora */
-    }
-
-    #first_left_buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .first_left_btn {
-        font-size: 20px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 4vw; /* Zwiększenie czytelności */
-    }
-
-    #page_navigation {
-        align-items: flex-start;
-    }
-
-    #nav_socials {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .nav_button {
-        font-size: 14px;
-    }
-}
-
 
 #page_container {
     display: flex;
@@ -134,78 +49,33 @@ body::before {
     background: var(--secondary);
 }
 
-/* Podstawowe style dla nawigacji */
-.navbar {
+#nav_logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px 20px;
-    color: #fff;
-  }
-  
-  .logo {
-    font-size: 24px;
-  }
-  
-  .menu {
+    width: 20%;
+}
+
+.nav_buttons_container {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    margin: 0 10px;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-  }
-  
-  .menu a:hover {
-    background-color: #555;
-  }
-  
-  /* Ukrywanie przycisku menu na większych ekranach */
-  .menu-toggle {
-    display: none;
-    background: none;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav_button {
     border: none;
-    color: #fff;
-    font-size: 24px;
+    background: none;
+    font-size: 20px;
     cursor: pointer;
-  }
-  
-  /* Responsywność */
-  @media (max-width: 768px) {
-    .menu {
-      display: none; /* Domyślnie ukryte menu */
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      width: 200px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-  
-    .menu li {
-      margin: 10px 0;
-      text-align: right;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-  
-    .menu.show {
-      display: flex; /* Pokazuje menu po kliknięciu */
-    }
-  }
-  
+    margin: 0px 40px 0px 40px;
+}
+
+#nav_socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+}
 
 #page_content {
     display: flex;
@@ -220,7 +90,7 @@ body::before {
     justify-content: center;
     align-items: center;
     margin-top: 25vh;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 #first_stripe_left {
@@ -284,6 +154,48 @@ body::before {
     -webkit-box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
     -moz-box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
     box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
+}
+
+#second_stripe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    height: 50vh;
+}
+
+#second_stripe_left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+}
+
+#second_stripe_right {
+    width: 50%;
+    height: 90%;
+    background: url(img/comet6.jpg);
+    background-position: center;
+    border-radius: 35px;
+}
+
+#rules_button {
+    background: var(--primary);
+    border: none;
+    height: 3.5rem;
+    width: fit-content;
+    margin-top: 5vh;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.5s, scale 0.5s;
+}
+
+#rules_button:hover {
+    scale: 1.2;
+    transition: transform 0.5s, scale 0.5s;
 }
 
 .rules_block {
