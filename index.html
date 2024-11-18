@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="script.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/favicon">
 
@@ -12,21 +14,17 @@
 <body>
     <div id="page_container">
         <div id="page_navigation">
-            <div id="nav_logo">
-
-            </div>
-            <a href="index.html" id="logo_button"><img src="img/logo.png" width="48px" height="48px" href="index.html"></a>
-            <div class="nav_buttons_container">
-                <button class="nav_button">Regulamin</button>
-                <button class="nav_button" onclick="location.href='wsparcie.html'">Wsparcie</button>
-                <button class="nav_button">Podania</button>
-                <button class="nav_button">O nas</button>
-                <button class="nav_button">Kontakt</button>
-            </div>
-            <div id="nav_socials">
-                <a href="https://discord.gg/8RZCVQKHv4" id="discord_button"><img src="img/discord.png" width="32px"></a>
-                <a href="https://tiktok.com/@blastrp8?_t=8rUrMfk4rVW&_r=1" id="discord_button"><img src="img/tiktok.png" width="32px"></a>
-            </div>
+            <nav class="navbar">
+                <div class="logo"><img src="img/logo.png" width="50rem"></div>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <ul class="menu">
+                  <li><a href="regulamin.html">Regulamin</a></li>
+                  <li><a href="wsparcie.html">Wsparcie</a></li>
+                  <li><a href="podania.html">Podania</a></li>
+                  <li><a href="onas.html">O nas</a></li>
+                </ul>
+              </nav>
+              
         </div>
         <div id="page_content">
             <div id="first_stripe">
@@ -38,7 +36,8 @@
                         <a href="onas.html"><button class="first_left_btn">Dowiedz się więcej</button></a>
                     </div>
                 </div>
-                <div id="first_divider"></div>
+                <div id="first_divider">
+                </div>
                 <div id="first_stripe_right">
                 </div>
             </div>
