@@ -103,6 +103,9 @@ body::before {
     box-sizing: border-box;
     background: linear-gradient(90deg, rgba(14,53,93,1) 0%, rgba(0,136,255,1) 100%);
     border-radius: 0px 35px 35px 0px;
+    -webkit-box-shadow: 13px 0px 19px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 13px 0px 19px -4px rgb(0, 0, 0);
+    box-shadow: 13px 0px 19px -4px rgb(0, 0, 0);
 }
 
 #first_left_buttons {
@@ -139,11 +142,14 @@ body::before {
     width: 35%;
     height: 100%;
     display: flex;
-    background: url(img/comet6.jpg);
+    background: url(img/screen1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 35px 0px 0px 35px;
     box-sizing: border-box;
     border: 4px solid var(--secondary);
+    -webkit-box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
+    box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
 }
