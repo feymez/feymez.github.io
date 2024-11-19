@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const year = new Date().getFullYear()
+  $('#currentYear').html('Wszelkie prawa zastrzeżone &copy; 2023 - '+year+' - BlastRP &trade;')
   window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
   });
