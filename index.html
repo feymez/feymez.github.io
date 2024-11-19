@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8706eb9108.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/favicon">
@@ -15,15 +16,26 @@
     <div id="page_container">
         <div id="page_navigation">
             <div id="nav_logo">
-
+                <a href="index.html" id="logo_button"><img src="img/logo.webp" width="50rem"></a>
             </div>
-            <a href="index.html" id="logo_button"><img src="img/logo.webp" width="50rem"></a>
             <div class="nav_buttons_container">
                 <button class="nav_button" onclick="location.href='regulamin.html'">Regulamin</button>
                 <button class="nav_button" onclick="location.href='wsparcie.html'">Wsparcie</button>
-                <button class="nav_button">Podania</button>
-                <button class="nav_button">O nas</button>
-                <button class="nav_button">Kontakt</button>
+                <button class="nav_button" onclick="location.href='podania.html'">Podania</button>
+                <button class="nav_button" onclick="location.href='onas.html'">O nas</button>
+                <button class="nav_button" onclick="location.href='kontakt.html'">Kontakt</button>
+            </div>
+            <div id="mobile_menu">
+                <div id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="menu-items">
+                    <li><a href="regulamin.html">Regulamin</a></li>  
+                    <li><a href="wsparcie.html">Wsparcie</a></li>  
+                    <li><a href="podania.html">Podania</a></li>  
+                    <li><a href="onas.html">O nas</a></li>  
+                    <li><a href="kontakt.html">Kontakt</a></li>  
+                </ul>
             </div>
             <div id="nav_socials">
                 <a href="https://discord.gg/8RZCVQKHv4" id="discord_button"><img src="img/discord.webp" width="32px"></a>
