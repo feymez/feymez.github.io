@@ -72,6 +72,8 @@ body::before {
 #mobile-menu {
   color: white;
   padding: 10px 20px;
+  z-index: 999;
+  position: fixed;
 }
 
 #menu-toggle {
@@ -144,6 +146,17 @@ body::before {
     width: 100%;
 }
 
+#mobile_logo {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #mobile_logo {
+        display: flex;
+        margin: auto;
+    }
+}
+
 #first_stripe {
     width: 100%;
     display: flex;
@@ -151,6 +164,13 @@ body::before {
     align-items: center;
     margin-top: 25vh;
     min-height: 50vh;
+}
+
+@media (max-width: 992px) {
+    #first_stripe {
+        margin-top: 5vh;
+        flex-direction: column;
+    }
 }
 
 #first_stripe_left {
@@ -167,6 +187,14 @@ body::before {
     box-shadow: 13px 0px 19px -4px rgb(0, 0, 0);
 }
 
+@media (max-width: 992px) {
+    #first_stripe_left {
+        width: 95%;
+        border-radius: 35px;
+        padding: 1vh 2vw;
+    }
+}
+
 #first_left_buttons {
     display: flex;
     justify-content: space-evenly;
@@ -174,6 +202,12 @@ body::before {
     width: 100%;
     height: auto;
     margin-top: 5vh;
+}
+
+@media (max-width: 992px) {
+    #first_left_buttons {
+        margin-top: 1vh;
+    }
 }
 
 .first_left_btn {
@@ -193,11 +227,24 @@ body::before {
     transition: transform 0.5s, scale 0.5s;
 }
 
+@media (max-width: 992px) {
+    .first_left_btn {
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+}
+
 #first_divider{
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 992px) {
+    #first_divider {
+        display: none;
+    }
 }
 
 #first_stripe_right {
@@ -216,6 +263,12 @@ body::before {
     box-shadow: -13px 0px 19px -4px rgba(0, 0, 0, 1);
 }
 
+@media (max-width: 992px) {
+    #first_stripe_right {
+        display: none;
+    }
+}
+
 #second_stripe {
     width: 100%;
     display: flex;
@@ -223,6 +276,12 @@ body::before {
     align-items: center;
     margin-top: 25vh;
     height: 50vh;
+}
+
+@media (max-width: 992px) {
+    #second_stripe {
+        flex-direction: column;
+    }
 }
 
 #second_stripe_left {
@@ -233,12 +292,25 @@ body::before {
     padding: 2vh 2vw;
 }
 
+@media (max-width: 992px) {
+    #second_stripe_left {
+        width: 95%;
+    }
+}
+
 #second_stripe_right {
     width: 50%;
     height: 90%;
     background: url(img/comet6.webp);
     background-position: center;
     border-radius: 35px;
+}
+
+@media (max-width: 992px) {
+    #second_stripe_right {
+        display: block;
+        width: 95%;
+    }
 }
 
 #rules_button {
