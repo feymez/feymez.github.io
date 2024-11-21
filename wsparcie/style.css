@@ -272,10 +272,6 @@ button:hover {
 }
 
 @media (max-width: 992px) {
-  #footer {
-    position: fixed;
-    bottom: 0;
-  }
 
   #footer_left, #footer_center {
     display: none;
