@@ -228,6 +228,10 @@ a {
   transition: transofrm 0.5s, border 0.5s;
 }
 
+#currentYear {
+  text-align: center;
+}
+
 #footer {
   display: flex;
   width: 100%;
@@ -259,4 +263,14 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 992px) {
+  #footer_left, #footer_center {
+    display: none;
+  }
+
+  #footer_right {
+    width: 100%;
+  }
 }
