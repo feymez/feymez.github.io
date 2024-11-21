@@ -24,6 +24,10 @@
   background-color: transparent;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
     background-color: rgba(0, 136, 255, 1);
     background-image: radial-gradient(circle, rgba(0, 136, 255, 1) 0%, rgba(14, 53, 93, 1) 100%);
@@ -170,7 +174,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 70vh;
+  height: 100%;
 }
 
 @media (max-width: 992px) {
