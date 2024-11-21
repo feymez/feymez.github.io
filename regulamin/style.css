@@ -171,6 +171,16 @@ a {
 	background: hsl(235 calc(1 * 85.6%) 64.7%/0.3);
 }
 
+.wrapper-Red {
+  border-radius: 3px;
+	padding: 0 2px;
+	font-weight: 500;
+	unicode-bidi: -moz-plaintext;
+	unicode-bidi: plaintext;
+	color: #FF0000;
+  background: hsla(0, 100%, 50%, 0.3);
+}
+
 .mention.interactive:hover {
 	text-decoration: underline;
 }
