@@ -20,6 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
       menuItems.style.display = menuItems.style.display === 'block' ? 'none' : 'block';
     });
 });
+
+function openQuestion(question) {
+  $(`#${question}_icon`).empty().append(`<i class="fa-solid fa-minus"></i>`);
+  $(`#${question}_button`).attr('onclick', `closeQuestion('${question}')`);
+  $(`#${question}_button`).css('border-radius', '8px 8px 0px 0px');
+  $(`#${question}_answer`).css('display', 'block');
+}
+
+function closeQuestion(question) {
+  $(`#${question}_icon`).empty().append(`<i class="fa-solid fa-plus"></i>`);
+  $(`#${question}_button`).attr('onclick', `openQuestion('${question}')`);
+  $(`#${question}_button`).css('border-radius', '8px');
+  $(`#${question}_answer`).css('display', 'none');
+}
   
 // $(document).ready(function () {
 //   const images = [
