@@ -161,6 +161,10 @@ body {
   }
 }
 
+.quest_button {
+  width: 80%;
+}
+
 .slider-container {
   position: relative;
   width: 80%;

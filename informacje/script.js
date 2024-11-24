@@ -21,45 +21,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
   
-$(document).ready(function () {
-  const images = [
-      '/photos/biznes.jpg',
-      '/photos/comet.png',
-      '/photos/doj.jpg',
-      '/photos/gang.jpg',
-      '/photos/lsc.jpg',
-  ];
+// $(document).ready(function () {
+//   const images = [
+//       '/photos/biznes.jpg',
+//       '/photos/comet.png',
+//       '/photos/doj.jpg',
+//       '/photos/gang.jpg',
+//       '/photos/lsc.jpg',
+//   ];
 
-  images.forEach(image => {
-      $('.slider').append(`<img src="${image}" alt="Zdjęcie">`);
-  });
+//   images.forEach(image => {
+//       $('.slider').append(`<img src="${image}" alt="Zdjęcie">`);
+//   });
 
-  let currentIndex = 0;
+//   let currentIndex = 0;
 
-  function updateSlider() {
-      const width = $('.slider-container').width();
-      $('.slider').css('transform', `translateX(${-currentIndex * width}px)`);
-  }
+//   function updateSlider() {
+//       const width = $('.slider-container').width();
+//       $('.slider').css('transform', `translateX(${-currentIndex * width}px)`);
+//   }
 
-  $('.next').click(function () {
-      if (currentIndex < images.length - 1) {
-          currentIndex++;
-      } else {
-          currentIndex = 0;
-      }
-      updateSlider();
-  });
+//   $('.next').click(function () {
+//       if (currentIndex < images.length - 1) {
+//           currentIndex++;
+//       } else {
+//           currentIndex = 0;
+//       }
+//       updateSlider();
+//   });
 
-  $('.prev').click(function () {
-      if (currentIndex > 0) {
-          currentIndex--;
-      } else {
-          currentIndex = images.length - 1;
-      }
-      updateSlider();
-  });
+//   $('.prev').click(function () {
+//       if (currentIndex > 0) {
+//           currentIndex--;
+//       } else {
+//           currentIndex = images.length - 1;
+//       }
+//       updateSlider();
+//   });
 
-  setInterval(function () {
-      $('.next').click();
-  }, 5000);
-});
+//   setInterval(function () {
+//       $('.next').click();
+//   }, 5000);
+// });
