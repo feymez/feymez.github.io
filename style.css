@@ -4,6 +4,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
+    user-select: none;
 }
 
 *::-webkit-scrollbar {
