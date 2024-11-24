@@ -146,6 +146,12 @@ a {
   box-sizing: border-box;
 }
 
+@media (max-width: 992px) {
+  #cont_image {
+    display: none;
+  }
+}
+
 .cont {
   width: 50%;
   height: 100%;
