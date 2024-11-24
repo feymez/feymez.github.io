@@ -34,6 +34,28 @@ function closeQuestion(question) {
   $(`#${question}_button`).css('border-radius', '8px');
   $(`#${question}_answer`).css('display', 'none');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.copy-button').forEach(button => {
+      button.addEventListener('click', () => {
+          const codeBlock = button.previousElementSibling;
+          const code = codeBlock.textContent;
+
+          navigator.clipboard.writeText(code).then(() => {
+              button.textContent = "Skopiowano!";
+              button.disabled = true;
+
+              setTimeout(() => {
+                  button.innerHTML = `<i class="fa-solid fa-copy"></i>`;
+                  button.disabled = false;
+              }, 2000);
+          }).catch(() => {
+              button.textContent = "Błąd";
+          });
+      });
+  });
+});
+
   
 // $(document).ready(function () {
 //   const images = [

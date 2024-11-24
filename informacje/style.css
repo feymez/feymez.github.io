@@ -4,6 +4,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
+    user-select: none;
 }
 
 :root {
@@ -224,6 +225,86 @@ a {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.keybind {
+  display: inline-block;
+  background-color: #f0f0f0; /* Jasnoszare tło */
+  color: #333; /* Kolor tekstu */
+  font-family: Arial, sans-serif; /* Przyjazna czytelności czcionka */
+  font-size: 14px; /* Dostosuj wielkość */
+  font-weight: bold; /* Pogrubienie dla czytelności */
+  border: 1px solid #ccc; /* Delikatna ramka */
+  border-radius: 5px; /* Zaokrąglone rogi */
+  padding: 4px 8px; /* Wewnętrzny odstęp */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Lekki cień */
+  text-align: center;
+  user-select: none; /* Wyłączenie możliwości zaznaczania tekstu */
+  margin: 2px;
+}
+
+.codeblock-wrapper {
+  position: relative; /* Ustawienie pozycji dla elementów wewnętrznych */
+  margin: 10px 0; /* Odstępy między blokami */
+}
+
+.codeblock {
+  display: block;
+  background-color: #2f3136; /* Ciemne tło, jak w Discordzie */
+  color: #ffffff; /* Jasny tekst */
+  font-family: Consolas, "Courier New", monospace; /* Monospace dla kodu */
+  font-size: 14px; /* Dostosowana wielkość */
+  padding: 10px; /* Wewnętrzny odstęp */
+  border-radius: 5px; /* Zaokrąglone rogi */
+  white-space: pre-wrap; /* Zachowanie formatowania */
+  word-wrap: break-word; /* Zawijanie długich linii */
+  border: 1px solid #202225; /* Cienka ramka */
+  position: relative;
+}
+
+.copy-button {
+  display: none; /* Domyślnie ukryty */
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none; /* Kolor przycisku (Discord blue) */
+  color: #ffffff; /* Tekst na przycisku */
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.codeblock-wrapper:hover .copy-button {
+  display: block; /* Pokaż przycisk przy hover */
+  opacity: 1;
+  transform: scale(1); /* Przywraca normalny rozmiar */
+}
+
+.copy-button:active {
+  background-color: none; 
+}
+
+.copy-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+
+.inline-code {
+  display: inline-block;
+  background-color: #2b2d31; /* Ciemne tło */
+  color: #c9d1d9; /* Subtelnie jaśniejszy tekst */
+  font-family: Consolas, "Courier New", monospace; /* Kodowa czcionka */
+  font-size: 14px; /* Rozmiar czcionki */
+  padding: 2px 4px; /* Minimalny odstęp */
+  border-radius: 3px; /* Lekkie zaokrąglenie */
+  border: 1px solid #202225; /* Cienka ramka */
+  white-space: nowrap; /* Zapobiega zawijaniu */
+}
+
 
 /* .slider-container {
   position: relative;
