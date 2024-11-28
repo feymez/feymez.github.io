@@ -162,6 +162,10 @@ a {
   justify-content: flex-start;
 }
 
+#questions {
+  overflow: auto;
+}
+
 #cont_image {
   padding: 0;
   background-image: url(../img/pytania2.jpg);
@@ -303,8 +307,8 @@ a {
   border-radius: 3px; /* Lekkie zaokrąglenie */
   border: 1px solid #202225; /* Cienka ramka */
   white-space: nowrap; /* Zapobiega zawijaniu */
+  user-select: text;
 }
-
 
 /* .slider-container {
   position: relative;
