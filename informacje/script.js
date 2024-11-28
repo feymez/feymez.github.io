@@ -21,10 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const Question = [1, 2, 3, 4, 5];
+
 function openQuestion(question) {
+  
+  $('.quest_div').css('display', 'none')
+  $('.quest_icon').empty().append('<i class="fa-solid fa-plus"></i>');
+  
+  for (const k of Question) {
+    $(`#${k}_button`).attr('onclick', `openQuestion('${k}')`);
+    $(`#${k}_button`).css('border-radius', '8px');
+  }
+  
   $(`#${question}_icon`).empty().append(`<i class="fa-solid fa-minus"></i>`);
-  $(`#${question}_button`).attr('onclick', `closeQuestion('${question}')`);
   $(`#${question}_button`).css('border-radius', '8px 8px 0px 0px');
+  $(`#${question}_button`).attr('onclick', `closeQuestion('${question}')`);
   $(`#${question}_answer`).css('display', 'block');
 }
 
