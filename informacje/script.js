@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const Question = [1, 2, 3, 4, 5];
+const Question = [1, 2, 3, 4, 5, 6];
 
 function openQuestion(question) {
   
