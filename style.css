@@ -257,7 +257,7 @@ body::before {
     width: 35%;
     aspect-ratio: 16 / 9;
     display: flex;
-    background: url(img/screen1.webp);
+    background: url(img/main_right2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
