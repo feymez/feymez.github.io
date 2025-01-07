@@ -281,3 +281,50 @@ button:hover {
     width: 100%;
   }
 }
+
+.mention {
+	border-radius: 3px;
+	padding: 0 2px;
+}
+
+.interactive {
+	-webkit-transition: background-color 50ms ease-out, color 50ms ease-out;
+	transition: background-color 50ms ease-out, color 50ms ease-out;
+	cursor: pointer;
+}
+
+.wrapper-1ZcZW- {
+	border-radius: 3px;
+	padding: 0 2px;
+	font-weight: 500;
+	unicode-bidi: -moz-plaintext;
+	unicode-bidi: plaintext;
+	color: 235 calc(1 * 86.2%) 88.6%;
+	background: hsl(235 calc(1 * 85.6%) 64.7%/0.3);
+}
+
+.mention.interactive:hover {
+	text-decoration: underline;
+}
+
+.interactive:hover {
+	color: hsl(0 calc(1 * 0%) 100%/1);
+	background-color: hsl(235 calc(1 * 85.6%) 64.7%/1);
+}
+
+.mention {
+	border-radius: 3px;
+	padding: 0 2px;
+}
+
+.interactive {
+	-webkit-transition: background-color 50ms ease-out, color 50ms ease-out;
+	transition: background-color 50ms ease-out, color 50ms ease-out;
+	cursor: pointer;
+}
+
+.wrapper-1ZcZW- {
+	font-weight: 500;
+	unicode-bidi: plaintext;
+	background: hsl(235 calc(1 * 85.6%) 64.7%/0.3);
+}
